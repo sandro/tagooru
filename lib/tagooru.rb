@@ -12,7 +12,6 @@ class Tagooru
 
   def self.search(query, page = 1)
     playlist = get '/en/search_playlist.php', :query => {:search => query, :page => page}
-    puts playlist.inspect
     Playlist.new(playlist).parse
   end
 
