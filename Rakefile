@@ -5,7 +5,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "tagooru"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{Ruby wrapper for the tagoo search engine}
     gem.email = "sandro.turriate@gmail.com"
     gem.homepage = "http://github.com/sandro/tagooru"
     gem.authors = ["Sandro Turriate"]
