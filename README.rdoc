@@ -3,7 +3,7 @@
 Ruby wrapper for the tagoo.ru search engine
 
 == Example
-require 'tagooru'
+<tt>require 'tagooru'</tt>
 
 <tt>>> playlist = Tagooru.search("radiohead 15 step")</tt>
 
