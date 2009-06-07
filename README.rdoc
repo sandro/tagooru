@@ -1,6 +1,15 @@
 = tagooru
 
-Description goes here.
+Ruby wrapper for the tagoo.ru search engine
+
+== Example
+require 'tagooru'
+
+>> playlist = Tagooru.search("radiohead 15 step")
+>> playlist.first.name
+=> "Radiohead - 15 Step"
+>> playlist.first.location
+=> "http://someurl.com/music/radiohead/15_step.mp3"
 
 == Copyright
 
