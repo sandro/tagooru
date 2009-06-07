@@ -5,11 +5,15 @@ Ruby wrapper for the tagoo.ru search engine
 == Example
 require 'tagooru'
 
->> playlist = Tagooru.search("radiohead 15 step")
->> playlist.first.name
->> "Radiohead - 15 Step"
->> playlist.first.location
->> "http://someurl.com/music/radiohead/15_step.mp3"
+<tt>>> playlist = Tagooru.search("radiohead 15 step")</tt>
+
+<tt>>> playlist.first.name</tt>
+
+<tt>=> "Radiohead - 15 Step"</tt>
+
+<tt>>> playlist.first.location</tt>
+
+<tt>=> "someurl.com/music/radiohead/15_step.mp3"</tt>
 
 == Copyright
 
