@@ -2,6 +2,7 @@ require 'rubygems'
 require 'httparty'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'httparty_ext.rb'
 
 class Tagooru
   autoload :Playlist, 'tagooru/playlist'
