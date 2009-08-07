@@ -45,9 +45,9 @@ describe Tagooru::Playlist do
     end
   end
 
-  describe Tagooru::Playlist::Track do
+  describe Tagooru::Track do
     before do
-      @track = Tagooru::Playlist::Track.new "Fix You", "http://google.com/?q=fixyou.mp3"
+      @track = Tagooru::Track.new "Fix You", "http://google.com/?q=fixyou.mp3"
     end
 
     it "has a name and location" do

@@ -5,6 +5,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 class Tagooru
   autoload :Playlist, 'tagooru/playlist'
+  autoload :Track, 'tagooru/track'
 
   include HTTParty
   base_uri 'http://tagoo.ru'
