@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{tagooru}
-  s.version = "0.0.1"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Sandro Turriate"]
-  s.date = %q{2009-06-07}
+  s.date = %q{2009-08-10}
   s.email = %q{sandro.turriate@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -18,14 +18,18 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
+     "VERSION",
+     "lib/httparty_ext.rb",
      "lib/tagooru.rb",
      "lib/tagooru/playlist.rb",
+     "lib/tagooru/track.rb",
      "script/console",
      "spec/fixtures/fix.m3u",
      "spec/spec.opts",
      "spec/spec_helper.rb",
      "spec/tagooru/playlist_spec.rb",
-     "spec/tagooru_spec.rb"
+     "spec/tagooru_spec.rb",
+     "tagooru.gemspec"
   ]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/sandro/tagooru}
