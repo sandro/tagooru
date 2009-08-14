@@ -30,13 +30,11 @@ describe Tagooru::Playlist do
 
     describe "#lines" do
       before do
-        @array = @playlist.contents.to_a
-        @playlist.contents.stub!(:to_a => @array)
+        @playlist = Tagooru::Playlist.new "INFO\r\nline1\r\nline2\r\n"
       end
 
       it "skips the first line" do
-        @array.should_receive(:shift).and_return([])
-        @playlist.send(:lines)
+        @playlist.send(:lines)[0].should_not =~ /INFO/
       end
 
       it "removes line separators" do

@@ -21,9 +21,9 @@ class Tagooru
 
     def lines
       @lines ||= begin
-        list = contents.to_a
-        list.shift
-        list.map {|line| line.chomp}
+        lines = contents.split("\n")
+        lines.shift
+        lines.map {|line| line.chomp}
       end
     end
   end
