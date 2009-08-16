@@ -22,7 +22,7 @@ class Tagooru
 
   def self.search(query, page = 1)
     response = get '/api_search.php', :query => {:search => query, :page => page, :seed => generate_seed}
-    data = Crack::JSON.parse(response.sub(/^.+= /, ''))
+    data = Crack::JSON.parse(response.sub(/^.*?= /, ''))
     data['data'].map do |d|
       Track.new d['title'], d['file_url']
     end
