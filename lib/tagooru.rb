@@ -10,9 +10,13 @@ class Tagooru
 
   include HTTParty
   base_uri 'http://tagoo.ru'
-  default_params :for => :audio, :key => '74d8940f'
+  default_params :for => :audio, :key => '5239980d'
   headers 'Referer' => 'http://tagoo.ru/en/webmaster.php?mode=json_api'
   format :plain
+
+  def self.api_key=(key)
+    default_params :key => key
+  end
 
   # override method from HTTParty to prevent cookies from overriding other
   # header data (httparty 0.4.4)
